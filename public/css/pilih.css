@@ -1,0 +1,211 @@
+div.lc{
+	padding: 10px;
+	
+}
+div.lc .lc-header{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center !important;
+}
+
+div.lc .lc-header{
+	/*text-align: center !important;*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+	/*height: 100%;*/
+	/*display: flex;*/
+	padding: 15px 0;
+	border-style: solid;
+	border-width: 1px 1px 0 1px;
+	border-color: rgba(0,0,0,10%);
+	border-radius: 5px 5px 0 0;
+}
+
+.item-center {
+  text-align: center !important;
+}
+
+
+div.lc .lc-header ul li{
+	cursor: pointer;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 17px;
+}
+
+div.lc .lc-body{
+	margin: 0;
+	background-color: #fefefe;
+}
+
+div.lc-body .lc-b,
+div.lc-body .lc-view {
+	margin: 0;
+	padding: 5px;
+}
+
+div.lc-body .lc-view{
+	min-height: 80vh;
+	height: 80%;
+	padding: 30px 30px 10px 30px; 
+	background-color: #fefefe;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: rgba(0,0,0,10%);
+	border-radius: 0 0 5px 5px;
+}
+
+/*div.lc-b{
+	display:none;
+}*/
+
+.btn-nx{
+	/*width: 200px;*/
+	height: -150px;
+	padding: 1rem;
+	background: none;
+	outline: none;
+	border-radius: 10px;
+	transition: .3s;
+	color: #000;
+	padding: 0.5rem;
+	border: 3px solid #5e8c61;
+}
+
+.btn-nx:hover{
+	cursor: pointer;
+	background-color: #5e8c61;
+	color: #fff;
+}
+
+.con_chck{
+
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.con_chck .chck{
+	margin: 10px;
+}
+.con_chck .chck label{
+	cursor: pointer;
+	border-color: #000
+}
+.con_chck .chck label input[type="checkbox"]{
+	display: none;
+}
+
+.con_chck .chck label span{
+	position: relative;
+	display: inline-block;
+	background: #fff;
+	padding: 10px 15px;
+	color: #000;
+	border-style: solid;
+	border-color: #cecccc;
+	font-weight: bold;
+	/*text-shadow: 0 1px 4px rgba(0,0,0,0.5);*/
+	border-radius: 30px;
+	font-size: 15px;
+	transition: 0.2s;
+	user-select: none;
+	overflow: hidden;	
+}
+
+.con_chck .chck label span:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.con_chck .chck label input[type="checkbox"]:hover ~ span{
+	color: #098789;
+}
+
+.con_chck .chck label input[type="checkbox"]:checked ~ span{
+	background: #fff;
+	color: #098789;
+	border-color: #098789;
+}
+
+.form{
+	width: 50%;
+	position: relative;
+	height: 50px;
+	overflow: hidden;
+}
+
+.form input, 
+.from select, 
+.form textarea{
+	width: 100%;
+	height: 100%
+	color: #078979;
+	padding-top: 20px;
+	border:none;
+	outline: none;
+}
+
+.form label{
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+}
+
+.form label::after{
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -1px;
+	height: 100%;
+	width: 100%;
+	border-bottom: 3px solid #077897;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+}
+
+.content-form{
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	transition: all 0.3s ease;
+}
+/*
+.form input:valid + .label-form .content-form{
+	font-size: 14px;
+	color: #077897;
+	transform: translateY(-200%);
+}*/
+
+.form input:focus + .label-form .content-form,
+.form input:valid + .label-form .content-form
+{
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #077897;
+	/*background-color: blue; */
+}
+
+.form input:focus + .label-form::after
+{
+	transform: translateX(0%);
+} 
+
+::placeholder {
+  font-size: 20px;
+  /*line-height: 5px;*/
+  margin-left: 5px;
+  width: 5px;
+}

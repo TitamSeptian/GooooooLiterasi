@@ -1,0 +1,82 @@
+@font-face {
+  font-family: proxima-regular;
+  src: url(../font/proxima-nova/Proxima-Regular.woff); }
+  
+.container-me{
+	margin: 10px;
+}
+.container-me2{
+	margin: 30px 150px 0px 150px;
+}
+
+@media only screen and (max-width: 991px) {
+	.container-me2{
+		margin: 10px;
+	}	
+}
+
+div.lc .lc-header{
+	background-color: #5e8c61;
+	color: #fff;
+}
+
+div.lc .lc-body{
+	margin: 0;
+	background-color: #fefefe;
+}
+
+div.lc-body .lc-b,
+div.lc-body .lc-view {
+	margin: 0;
+	padding: 5px;
+}
+
+div.lc-body .lc-view{
+	min-height: 80vh;
+	height: 100%;
+	/*padding: 30px 30px 10px 30px; */
+	border: none;
+}
+
+div.cd{
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  font-family: proxima-regular;
+  border-width: 1px;
+  width: 100%;
+  height: auto;
+  padding: 13px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+div.cd div.cd-hd{
+  /*background-color: red;*/
+  border-style: solid;
+  /*border-width: 1px;*/
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border-width: 0px 0px 1px 0px;
+  border-color:  #e1e1e1
+}
+
+div.cd div.cd-bd{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+}
+
+div.cd div.cd-ft{
+  /*background-color: red;*/
+  border-style: solid;
+  /*border-width: 1px;*/
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border-width: 1px 0px 0px 0px;
+  border-color:  #e1e1e1
+}

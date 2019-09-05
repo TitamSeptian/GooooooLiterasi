@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url(../font/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+  font-family: proxima-regular;
+  src: url(../font/proxima-nova/Proxima-Regular.woff);
+}
+
+body {
+  font-family: Lexend;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.sidenav a:nth-child(1) {
+  padding: 8px 8px 8px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .side-menu {
+  margin: 0 10px 0 10px;
+  border-style: double;
+  border-width: 4px 0px 0px 0px;
+  padding: 20px 0 20px 10px;
+  text-decoration: none;
+  border-color: rgba(94, 140, 97, 100%);
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav .side-menu.active {
+  background-color: rgb(148, 232, 180, 43%);
+}
+
+.sidenav .side-menu:nth-last-of-type(1) {
+  margin: 0 10px 0 10px;
+  border-style: double;
+  border-color: rgba(94, 140, 97, 100%);
+  border-width: 4px 0px 4px 0px;
+  padding: 20px 0 20px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.2s;
+}
+
+
+.sidenav .side-menu:hover {
+  background-color: rgba(0, 0, 0, 7%);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.av-admin {
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/boy.png');
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+body,
+main.py-4 {
+  background-color: #f1f1f1;
+}
+
+div.info-user hr {
+  display: block;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: 0.5em;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div.cd {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  font-family: proxima-regular;
+  border-width: 1px;
+  width: 100%;
+  height: auto;
+  padding: 13px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+div.cd div.cd-hd {
+  /*background-color: red;*/
+  border-style: solid;
+  /*border-width: 1px;*/
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border-width: 0px 0px 1px 0px;
+  border-color: #e1e1e1
+}
+
+div.cd div.cd-bd {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+}
+
+div.cd div.cd-ft {
+  /*background-color: red;*/
+  border-style: solid;
+  /*border-width: 1px;*/
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border-width: 1px 0px 0px 0px;
+  border-color: #e1e1e1
+}
+
+.my-form form input,
+.my-form form select,
+.my-form form textarea {
+  width: 100%;
+  padding: 12px 2%;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  box-shadow: 0px 0px 2px #b0b0b0;
+  border: 0px;
+  outline: none;
+}
+
+.my-form form select {
+  width: 100%
+}
+
+.my-form form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 3px;
+  background: #5e8c61;
+  color: #FFF;
+  font-size: 14px;
+  border: 0px;
+  cursor: pointer;
+  box-shadow: 0.5px 2px #5e8c61;
+  transition: all .4s;
+}
+
+.my-form form button:active,
+.my-form form button:focus {
+  transform: translate(0.5px, 2px);
+  box-shadow: 0px 0px #5e8c61;
+}
+
+div.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(248, 255, 45, 100%);
+  padding: 10px;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.about {
+  font-size: 40px;
+  color: #000;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 90%);
+  z-index: 99999;
+}
+
+.preloader .img-preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .sidenav .closebtn {
+    /*position: absolute;*/
+    display: block;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 80px;
+  }
+}
